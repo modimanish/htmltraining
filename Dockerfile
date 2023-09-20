@@ -5,7 +5,7 @@ FROM nginx:latest
 # COPY nginx.conf /etc/nginx/nginx.conf
 
 # (Optional) Copy your website files to the appropriate directory
-COPY /var/lib/jenkins/workspace/Project-2/* /usr/share/nginx/html
+COPY /var/lib/jenkins/workspace/Project-2 /usr/share/nginx/html
 
 # Expose port 80 (the default HTTP port)
 EXPOSE 80
