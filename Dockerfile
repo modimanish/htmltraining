@@ -2,10 +2,10 @@
 FROM nginx:latest
 
 # Copy your custom Nginx configuration file if needed
-COPY nginx.conf /etc/nginx/nginx.conf
+# COPY nginx.conf /etc/nginx/nginx.conf
 
 # (Optional) Copy your website files to the appropriate directory
-COPY /var/lib/jenkins/workspace/Project-2 /usr/share/nginx/html
+COPY ./Project-2/* /usr/share/nginx/html
 
 # Expose port 80 (the default HTTP port)
 EXPOSE 80
